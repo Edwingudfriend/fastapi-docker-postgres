@@ -17,3 +17,5 @@ def create_inventory_item(item: InventoryBase, db: Session = Depends(get_db)):
 @router.get("/inventory", response_model=List[InventoryBase])
 def list_inventory(db: Session = Depends(get_db)):
     return db_service.get_all_inventory(db)
+
+
