@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "order_service"
+version = "0.1.0"
+description = "Accepts orders from users and sends them to a Kafka topic"
+authors = ["EdwinPNchia"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python =  "^3.9.19"
+kafka-python = "^2.0.2"
+SQLAlchemy = "^2.0.29"
+pydantic = "^2.7.0"
+uvicorn = "^0.29.0"
+fastapi = "^0.110.1"
+psycopg2-binary = "^2.9.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# Disable package mode
+package-mode = false
